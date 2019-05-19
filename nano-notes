@@ -1,0 +1,11 @@
+Submission (https://review.udacity.com/#!/rubrics/1125/view)
+Your submission should be a PDF that includes:
+
+An outline of steps taken to prepare the data to be visualized in the chart, such as:
+What tools did you use for each step? (Python, SQL, Excel, etc)
+How did you calculate the moving average?
+What were your key considerations when deciding how to visualize the trends?
+Line chart with local and global temperature trends
+At least four observations about the similarities and/or differences in the trends
+
+Example of moving avg (https://docs.google.com/spreadsheets/d/1xjbclbaS2d4p4XqeVAzYgLXRVbp935xwisn3NAbVGHw/edit#gid=0)
