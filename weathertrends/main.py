@@ -1,9 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-
-# Import the files to be used
 from numpy import NaN
 
+# Import the files to be used
 city_data = pd.read_csv("city_data.csv", parse_dates=["year"], index_col=["year"])
 #print(city_data.head())
 
@@ -27,7 +26,7 @@ city_data_br = city_data[city_data_br]
 mva = city_data_br.drop(['city', 'country'], axis=1)
 mva= mva.replace(0, NaN)
 mva=mva.dropna(how='all', axis=0)
-mva = mva.rolling(5).mean()
+mva = mva.rolling(7).mean()
 
 print(mva)
 plt.plot(mva)
