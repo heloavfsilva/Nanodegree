@@ -9,3 +9,46 @@ Line chart with local and global temperature trends
 At least four observations about the similarities and/or differences in the trends
 
 Example of moving avg (https://docs.google.com/spreadsheets/d/1xjbclbaS2d4p4XqeVAzYgLXRVbp935xwisn3NAbVGHw/edit#gid=0)
+
+--------------------------
+Conda setup
+download Anaconda
+if you have already installed run: 
+conda upgrade conda
+conda upgrade --all
+
+then configure you new enviroment
+conda create -n py python=3
+conda activate py
+
+conda list: will show everything you have installed
+conda install package_name: same funcion as pip install
+
+conda env export > environment.yaml: will export the config to a file
+conda env create -f environment.yaml: will create an env from a file
+
+--------------------------
+Jupyter setup
+conda install jupyter notebook
+jupyter notebook
+
+For further reference how to markup/markdown in jupyter: 
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+For keyboard shortcut:
+http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e412d0_keyboard-shortcuts/keyboard-shortcuts.ipynb
+
+Magic commands:
+Magic commands are preceded with one or two percent signs (% or %%) 
+for line magics and cell magics, respectively
+%timeit: how long it takes for a function to run
+
+%%timeit: how long it takes for a whole cell to run
+
+interactive debugger? 
+%pdb
+
+Converting notebooks to other format: 
+jupyter nbconvert --to html notebook.ipynb
+jupyter nbconvert notebook.ipynb --to slides
+add the --post serve option to open up and present it in browser

@@ -26,9 +26,17 @@ city_data_br = city_data[city_data_br]
 mva = city_data_br.drop(['city', 'country'], axis=1)
 mva= mva.replace(0, NaN)
 mva=mva.dropna(how='all', axis=0)
-mva = mva.rolling(7).mean()
+mva7 = mva.rolling(7).mean()
+mva5 = mva.rolling(5).mean()
+mva2 = mva.rolling(2).mean()
 
-print(mva)
-plt.plot(mva)
-
+# print(mva)
+fig = plt.figure()
+plt.plot(mva2)
+plt.xlabel('year', fontsize=18)
+plt.ylabel('degree', fontsize=16)
+plt.title('Weather trends for Belo Horizonte in 2 years avg')
+fig.savefig('BH-2years.jpg')
 plt.show()
+
+
