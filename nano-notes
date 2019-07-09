@@ -27,7 +27,7 @@ conda install package_name: same funcion as pip install
 conda env export > environment.yaml: will export the config to a file
 conda env create -f environment.yaml: will create an env from a file
 
---------------------------
+-------------------------
 Jupyter setup
 conda install jupyter notebook
 jupyter notebook
@@ -52,3 +52,186 @@ Converting notebooks to other format:
 jupyter nbconvert --to html notebook.ipynb
 jupyter nbconvert notebook.ipynb --to slides
 add the --post serve option to open up and present it in browser
+
+--------------------------
+Data Anlysis
+
+Introduction to Python Programming - https://www.udacity.com/course/introduction-to-python--ud1110
+Intro to Computer Science - https://www.udacity.com/course/intro-to-computer-science--cs101
+Programming Foundations with Python - https://www.udacity.com/course/programming-foundations-with-python--ud036
+
+
+1. Question: What am I trying to find out? OR Is there a problem I'm trying to solve? 
+2. Wrangle: a. gather b. assess c. clean EDA: a. explore b.augment
+3. Explore: Find patterns, remove outliers
+4. Draw Conclusions: ML / Inferential statistics / descriptive analysis
+5. Communicate: Data visualization reports, decks, presentations, etc.
+
+--------------------------
+Projeto de analise do dataset de filmes
+perguntas: 
+
+qual é a correlação do genero com o revenue e popularidade do filme?
+qual é a associação da produtora com o budget to filme?
+
+--------------------------
+Quantitative 
+	Discrete: Pages in a Book, Trees in Yard, Dogs at a Coffee Shop
+	Continuous: Height, Age, Income
+	
+Categorical
+	Ordinal: Letter Grade, Survey Rating
+	Nominal: Gender, Marital Status, Breakfast Items
+
+Center: Mean, Median, Mode
+Spread:
+Shape:
+Outliers:
+
+5, 8, 15, 7, 10, 22, 3, 1, 15
+1, 2, 3, 5, 7, 8, 10, 15, 15, 22
+7+8 = 15 / 2 = 7.5
+5, 8, 15, 7, 10, 22, 3, 1, 15, 2
+
+1, 1, 2, 3, 8
+mean = 15/5 = 3
+median = 2
+mode = 1
+
+8, 12, 32, 10, 3, 4, 4, 4, 4, 5, 12, 20
+3, 4, 4, 4, 4, 5, 8, 10, 12, 12, 20, 32
+5+8 = 13/2 = 6.5
+
+
+5, 8, 15, 7, 10, 22, 3, 1, 15, 10
+
+1, 3, 5, 7, 8, 10, 10, 15, 15, 22
+18/2 = 9
+
+Working with Quartile: 
+1, 2, 3, 4, 5, 8, 8, 10, 12
+
+q2 : 5
+q1 : 2.5
+q3 : 9.5
+
+
+----------------
+working with variance and standard variation 
+#1
+1, 5, 10, 3, 8, 12, 4
+1, 3, 3, 4, 8, 10, 12
+mean = 5.85
+(1-5.85) (3-5.85) (3-5.85) (4-5.85) (8-5.85) (10-5.85) (12-5.85)
+-4.85 -2.85 -2.85 -1.85 2.15 4.15  6.15
+raiz:
+2.20 1.68 1.68  1.36 1.46 2.03 2.47
+=12.88
+
+potencia:
+23.52 8.12 8.12 3.42 4.62 17.22 37.82= 102.84/7
+= 14.7
+
+
+#2
+1, 5, 10, 3, 8, 12, 4
+1, 3, 4, 5, 8, 10, 12
+
+5%	5%	5%	5%	5%	5%
+
+12%	-2%	10%	0%	7%	3%
+	
+
+15, 4, 3, 8, 15, 22, 7, 9, 2, 3, 3, 12, 6
+
+ordered: 2, 3, 3, 3, 4, 6, 7, 8, 9, 12, 15, 15, 22
+----------------
+Quantitative Variables
+Then we learned there are four main aspects used to describe quantitative variables:
+
+Measures of Center
+Measures of Spread
+Shape of the Distribution
+Outliers
+Measures of Center
+
+We looked at calculating measures of Center:
+Means
+Medians
+Modes
+Measures of Spread
+
+We also looked at calculating measures of Spread:
+Range
+Interquartile Range
+Standard Deviation
+Variance
+Shape
+
+We learned that the distribution of our data is frequently associated with one of the three shapes:
+1. Right-skewed
+2. Left-skewed
+3. Symmetric (frequently normally distributed)
+
+Depending on the shape associated with our dataset, certain measures of center or spread may be better for summarizing our dataset.
+
+When we have data that follows a normal distribution, we can completely understand our dataset using the mean and standard deviation.
+
+However, if our dataset is skewed, the 5 number summary (and measures of center associated with it) might be better to summarize our dataset.
+
+
+Descriptive Statistics
+Descriptive statistics is about describing our collected data using the measures discussed throughout this lesson: measures of center, measures of spread, shape of our distribution, and outliers. We can also use plots of our data to gain a better understanding.
+
+Inferential Statistics
+Inferential Statistics is about using our collected data to draw conclusions to a larger population. Performing inferential statistics well requires that we take a sample that accurately represents our population of interest.
+
+A common way to collect data is via a survey. However, surveys may be extremely biased depending on the types of questions that are asked, and the way the questions are asked. This is a topic you should think about when tackling the first project.
+
+We looked at specific examples that allowed us to identify the
+
+Population - our entire group of interest.
+Parameter - numeric summary about a population
+Sample - subset of the population
+Statistic - numeric summary about a sample
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
