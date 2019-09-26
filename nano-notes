@@ -179,7 +179,7 @@ When we have data that follows a normal distribution, we can completely understa
 
 However, if our dataset is skewed, the 5 number summary (and measures of center associated with it) might be better to summarize our dataset.
 
-
+----------------
 Descriptive Statistics
 Descriptive statistics is about describing our collected data using the measures discussed throughout this lesson: measures of center, measures of spread, shape of our distribution, and outliers. We can also use plots of our data to gain a better understanding.
 
@@ -195,9 +195,58 @@ Parameter - numeric summary about a population
 Sample - subset of the population
 Statistic - numeric summary about a sample
 
+Statistic -> Sample
+Parameter -> Population
+
+Sampling Distributions
+Sampling Distributions are the distribution of a statistic (any statistic).
+
+There are two very important mathematical theorems that are related to sampling distributions: The Law of Large Numbers and The Central Limit Theorem.
+
+The Law of Large Numbers states that as a sample size increases, the sample mean will get closer to the population mean. In general, if our statistic is a "good" estimate of a parameter, it will approach our parameter with larger sample sizes.
+
+The Central Limit Theorem states that with large enough sample sizes our sample mean will follow a normal distribution, but it turns out this is true for more than just the sample mean.
+Bootstrapping
+Bootstrapping is a technique where we sample from a group with replacement.
+
+We can use bootstrapping to simulate the creation of sampling distribution, which you did many times in this lesson. 
+
+By bootstrapping and then calculating repeated values of our statistics, we can gain an understanding of the sampling distribution of our statistics.
 
 
+How to use your knowledge of bootstrapping and sampling distributions to create a confidence interval for any population parameter.
 
+You learned how to build confidence intervals for the population mean and difference in means, but really the same process can be done for any parameter you are interested in.
+
+You also learned about how to use Python built-in functions to build confidence intervals, but that these rely on assumptions like the Central Limit Theorem.
+
+You learned about the difference between statistical significance and practical significance.
+
+Finally, you learned about other language associated with confidence intervals like margin of error and confidence interval width, and how to correctly interpret your confidence intervals. Remember, confidence intervals are about parameters in a population, and not about individual observations.
+----------------
+
+Wow! That was a ton. You learned:
+
+How to set up hypothesis tests. You learned the null hypothesis is what we assume to be true before we collect any data, and the alternative is usually what we want to try and prove to be true.
+
+
+You learned about Type I and Type II errors. You learned that Type I errors are the worst type of errors, and these are associated with choosing the alternative when the null hypothesis is actually true.
+
+
+You learned that p-values are the probability of observing your data or something more extreme in favor of the alternative given the null hypothesis is true. You learned that using a confidence interval from the bootstrapping samples, you can essentially make the same decisions as in hypothesis testing (without all of the confusion of p-values).
+
+
+You learned how to make decisions based on p-values. That is, if the p-value is less than your Type I error threshold, then you have evidence to reject the null and choose the alternative. Otherwise, you fail to reject the null hypothesis.
+
+
+You learned that when sample sizes are really large, everything appears statistically significant (that is you end up rejecting essentially every null), but these results may not be practically significant. 
+
+
+You learned that when performing multiple hypothesis tests, your errors will compound. Therefore, using some sort of correction to maintain your true Type I error rate is important. A simple, but very conservative approach is to use what is known as a Bonferroni correction, which says you should just divide your \alphaα level (or Type I error threshold) by the number of tests performed.
+
+This lesson is often the most challenging for students throughout the entire nanodegree program. In order to really have the ideas here stick, it can help to put them down in your own words.
+
+Below are some quizzes to test that you are leaving with the main ideas from this lesson, as well as a link to a great blog post, written by one of your fellow classmates, to assist with the ideas of this lesson!
 
 
 
